@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Welcome to my portfolio website." />
+
+  <meta itemprop="name" content="RS Portfolio">
+  <meta itemprop="description" content="Welcome to my portfolio website.">
+
+  <meta itemprop="image" content="assets/images/card.png">
+
+  <link rel="shortcut icon" href="assets/images/tabpic.png" type="image/png" />
+  <link rel="preload" href="assets/fonts/ShipporiAntique-Regular.ttf" as="font" type="font/ShipporiAntique"
+    crossorigin />
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+
+  <title>RS Portfolio</title>
+</head>
+
+<body>
+
+  <script>
+    const theme = localStorage.getItem("theme") || "dark";
+    document.body.classList.add(theme);
+  </script>
+
+  <header class="header">
+
+    <div class="menu-btn-container">
+      <div class="container">
+        <button type="button" class="menu-btn">MENU</button>
+      </div>
+    </div>
+
+    <nav class="nav hidden">
+      <ol class="nav-items">
+        <li class="nav-item"><a href="#">HOME</a></li>
+        <li class="nav-item"><a href="#about">ABOUT</a></li>
+        <li class="nav-item"><a href="#skills">SKILLS</a></li>
+        <li class="nav-item"><a href="#projects">PROJECTS</a></li>
+        <li class="nav-item">
+          <a href="#contact" data-focused="last-focused">CONTACT</a>
+        </li>
+      </ol>
+    </nav>
+
+    <div class="container">
+      <div class="header-textbox">
+        <h1 class="h1">
+          RILIND SHABANI<br />
+        </h1>
+        <h3 class="h1half">
+          FULL STACK SOFTWARE ENGINEER<br />
+        </h3>
+        <p class="header-text">
+          Enthusiastic software engineer driven to create innovative solutions.
+        </p>
+        <div class="header-btns">
+          <a href="#about" class="btn btn-cta-one">ABOUT ME</a>
+          <a href="#contact" class="btn btn-cta-one">CONTACT ME</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="article">
+      <div class="container">
+        <h2 class="h2" id="about">ABOUT</h2>
+        <div class="article-boxes">
+          <article class="article-box featured-article">
+            <div class="article-info">
+              <div class="article-info">
+                <span class="reaction-count">
+                  <a title="resume"
+                    href="https://drive.google.com/file/d/1UxTWcGLmE7HbHo5GXQJVK70dsA92nZdw/view?usp=sharing"
+                    target="_blank" rel="noopener">
+                    <img loading="lazy" src="assets/images/disso.png" alt="resume" width="65" height="65" />
+                  </a>
+                  <a href="https://drive.google.com/file/d/1UxTWcGLmE7HbHo5GXQJVK70dsA92nZdw/view?usp=sharing"
+                    target="_blank" rel="noopener">
+                    <button type="button" class="btn btn-cta">Resume</button>
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div class="article-info">
+              <div class="article-info">
+                <span class="reaction-count">
+                  <a title="LinkedIn" href="https://www.linkedin.com/in/rilinds/" target="_blank" rel="noopener">
+                    <img loading="lazy" src="assets/images/social-links/linkedin.svg" alt="LinkedIn" width="65"
+                      height="65" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/rilinds/" target="_blank" rel="noopener">
+                    <button type="button" class="btn btn-cta">LinkedIn</button>
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div class="article-info">
+              <div class="article-info">
+                <span class="reaction-count">
+                  <a title="GitHub" href="https://github.com/rilindrs" target="_blank" rel="noopener">
+                    <img loading="lazy" src="assets/images/social-links/github.svg" alt="GitHub" width="70"
+                      height="70" />
+                  </a>
+                  <a href="https://github.com/rilindrs" target="_blank" rel="noopener">
+                    <button type="button" class="btn btn-cta">GitHub</button>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </article>
+          <article class="article-box">
+            <div class="article-textbox">
+              <div class="article-info">
+                <h3 class="h3">Profile:</h3>
+                <span class="reaction-count">
+                  <img src="./assets/images/profile.png" alt="profile" loading="lazy" width="70" height="70" />
+                </span>
+              </div>
+              <div>
+                <p class="article-text">
+                  An enthusiastic full stack software engineer equipped with
+                  a proficient understanding of various programming languages
+                  including Python, Java, and JavaScript, coupled with a
+                  strong problem-solving mindset.
+                </p>
+              </div>
+              <div class="article-info">
+                <a href="https://www.linkedin.com/in/rilinds/" target="_blank" rel="noopener" class="link">Learn
+                  more</a>
+                <a href="https://www.linkedin.com/in/rilinds/" target="_blank" rel="noopener" title="LinkedIn">
+                  <img src="assets/images/social-links/linkedin.svg" alt="LinkedIn" loading="lazy" />
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="article-box">
+            <div class="article-textbox">
+              <div class="article-info">
+                <h3 class="h3">Education:</h3>
+                <span class="reaction-count">
+                  <img src="./assets/images/education.png" alt="education" loading="lazy" width="80" height="80" />
+                </span>
+              </div>
+              <div>
+                <p class="article-text">
+                  Bachelor of Science in Computer Science with Honours from
+                  Queen Mary University of London. This experience has been
+                  invaluable in shaping my career as a software engineer.
+                </p>
+                <br>
+              </div>
+              <div class="article-info">
+                <a href="https://www.linkedin.com/in/rilinds/" target="_blank" rel="noopener" class="link">Learn
+                  more</a>
+                <a href="https://www.linkedin.com/in/rilinds/" target="_blank" rel="noopener" title="LinkedIn">
+                  <img src="assets/images/social-links/linkedin.svg" alt="LinkedIn" loading="lazy" />
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="article-box">
+            <div class="article-textbox">
+              <div>
+                <div class="article-info">
+                  <h3 class="h3">Interests:</h3>
+                  <span class="reaction-count">
+                    <img src="./assets/images/interests.png" alt="interests" loading="lazy" width="80" height="80" />
+                  </span>
+                </div>
+                <div class="article-text">
+                  One of my greatest personal interests is the art of learning languages.
+                  Listed below are languages in which I am fluent and those I am currently learning.
+                </div>
+                <span class="reaction-count">
+                  <img src="./assets/images/uk.png" alt="uk" loading="lazy" width="60" height="60" />
+                  <img src="./assets/images/alb.png" alt="alb" loading="lazy" width="60" height="60" />
+                  <img src="./assets/images/arabic.png" alt="ara" loading="lazy" width="60" height="60" />
+                  <img src="./assets/images/swe.png" alt="swe" loading="lazy" width="60" height="60" />
+                  <img src="./assets/images/spain.png" alt="spa" loading="lazy" width="60" height="60" />
+                </span>
+              </div>
+              <div class="article-info">
+                <a href="https://www.linkedin.com/in/rilinds/" target="_blank" rel="noopener" class="link">Learn
+                  more</a>
+                <a href="https://www.linkedin.com/in/rilinds/" target="_blank" rel="noopener" title="LinkedIn">
+                  <img src="assets/images/social-links/linkedin.svg" alt="LinkedIn" loading="lazy" />
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <div class="container">
+        <h2 class="h2" id="skills">SKILLS</h2>
+        <div class="article-boxes">
+          <article class="article-box featured-article">
+            Well-versed in both front-end and back-end development, I've developed
+            projects using a wide array of languages and technologies. Intrigued
+            by the immense potential of artificial intelligence, I focused my
+            dissertation on this fascination. My interest propels me to delve deeper,
+            eagerly expanding my knowledge and contributing to its transformative potential.
+          </article>
+          <article class="article-box">
+            <div class="article-textbox">
+              <div class="article-info">
+                <h3 class="h4">Front-end Technologies:</h3>
+                <span class="reaction-count">
+                  <img src="./assets/images/fe.png" alt="fe" loading="lazy" width="80" height="80" />
+                </span>
+              </div>
+              <picture class="article-illustration">
+                <div class="article-info">
+                  <img src="assets/images/skills/js.webp" alt="JavaScript" class="skills-img" loading="lazy"
+                    title="JavaScript">
+                  <span class="reaction-count">
+                    <h3 class="h5">JavaScript</h3>
+                  </span>
+                </div>
+                <div class="article-info">
+                  <img src="assets/images/skills/react.webp" alt="React" class="skills-img" loading="lazy"
+                    title="React">
+                  <span class="reaction-count">
+                    <h3 class="h5">React & React Native</h3>
+                  </span>
+                </div>
+                <div class="article-info">
+                  <img src="assets/images/skills/html.png" alt="html" class="skills-img" loading="lazy" title="html">
+                  <span class="reaction-count">
+                    <h3 class="h5">HTML</h3>
+                  </span>
+                </div>
+                <div class="article-info">
+                  <img src="assets/images/skills/css.png" alt="css" class="skills-img" loading="lazy" title="css">
+                  <span class="reaction-count">
+                    <h3 class="h5">CSS</h3>
+                  </span>
+                </div>
+              </picture>
+              <div class="article-info">
+                <a href="https://github.com/rilindrs" target="_blank" rel="noopener" class="link">Learn more</a>
+                <a href="https://github.com/rilindrs" target="_blank" rel="noopener" title="GitHub">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="article-box">
+            <div class="article-textbox">
+              <div class="article-info">
+                <h3 class="h4">Back-end Technologies:</h3>
+                <span class="reaction-count">
+                  <img src="./assets/images/be.png" alt="be" loading="lazy" width="80" height="80" />
+                </span>
+              </div>
+              <picture class="article-illustration">
+                <div class="article-info">
+                  <img src="assets/images/skills/py.png" alt="python" class="skills-img" loading="lazy" title="python">
+                  <span class="reaction-count">
+                    <h3 class="h5">Python</h3>
+                  </span>
+                </div>
+                <div class="article-info">
+                  <img src="assets/images/skills/java.png" alt="java" class="skills-img" loading="lazy" title="java">
+                  <span class="reaction-count">
+                    <h3 class="h5">Java</h3>
+                  </span>
+                </div>
+                <div class="article-info">
+                  <img src="assets/images/skills/PHP-logo.svg.png" alt="php" class="skills-img" loading="lazy"
+                    title="php">
+                  <span class="reaction-count">
+                    <h3 class="h5">PHP</h3>
+                  </span>
+                </div>
+                <div class="article-info">
+                  <img src="assets/images/skills/sql.png" alt="sql" class="skills-img" loading="lazy" title="sql">
+                  <span class="reaction-count">
+                    <h3 class="h5">SQL</h3>
+                  </span>
+                </div>
+
+              </picture>
+              <div class="article-info">
+                <a href="https://github.com/rilindrs" target="_blank" rel="noopener" class="link">Learn more</a>
+                <a href="https://github.com/rilindrs" target="_blank" rel="noopener" title="GitHub">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="article-box">
+            <div class="article-textbox">
+              <div class="article-info">
+                <h3 class="h4">Machine Learning Tools:</h3>
+                <span class="reaction-count">
+                  <img src="./assets/images/ml.png" alt="ml" loading="lazy" width="80" height="80" />
+                </span>
+              </div>
+              <picture class="article-illustration">
+                <div class="article-info">
+                  <img src="assets/images/skills/numpy.png" alt="numpy" class="skills-img" loading="lazy" title="numpy">
+                  <span class="reaction-count">
+                    <h3 class="h5">NumPy</h3>
+                  </span>
+                </div>
+                <div class="article-info">
+                  <img src="assets/images/skills/pandas.png" alt="pandas" class="skills-img" loading="lazy"
+                    title="pandas">
+                  <span class="reaction-count">
+                    <h3 class="h5">Pandas</h3>
+                  </span>
+                </div>
+                <!-- <div class="article-info">
+                          <img src="assets/images/skills/matplotlib.svg.png" alt="matplotlib" class="skills-img" loading="lazy" title="matplotlib">
+                          <span class="reaction-count">
+                            <h3 class="h5">Matplotlib</h3>
+                          </span>
+                        </div> -->
+                <div class="article-info">
+                  <img src="assets/images/skills/Tensorflow.svg.png" alt="tfpt" class="skills-img" loading="lazy"
+                    title="tfpt">
+                  <span class="reaction-count">
+                    <h3 class="h5">TensorFlow & PyTorch</h3>
+                  </span>
+                </div>
+                <div class="article-info">
+                  <img src="assets/images/skills/stablebaselines.png" alt="sb" class="skills-img" loading="lazy"
+                    title="sb">
+                  <span class="reaction-count">
+                    <h3 class="h5">Stable Baselines</h3>
+                  </span>
+                </div>
+
+              </picture>
+              <div class="article-info">
+                <a href="https://github.com/rilindrs" target="_blank" rel="noopener" class="link">Learn more</a>
+                <a href="https://github.com/rilindrs" target="_blank" rel="noopener" title="GitHub">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="work">
+      <div class="container">
+        <h2 class="h2" id="projects">PROJECTS</h2>
+        <div class="work-boxes">
+          <div class="work-box">
+            <div class="work-textbox">
+              <h3 class="h3">WorldWise App</h3>
+              <p class="work-text">
+                A fundamental React Native application named WorldWise,
+                offering an interface to browse countries, categorized by
+                continents, with search capabilities, and providing detailed
+                country pages featuring brief descriptions, images and geographical information.
+              </p>
+              <ol class="work-technologies">
+                <li>JavaScript</li>
+                <li>React Native</li>
+                <li>RESTful API</li>
+              </ol>
+              <p class="work-text">
+                <strong>Prerequisites:</strong>
+                <br>
+                To access the project, it is imperative to have ExpoGo installed and an authenticated
+                account, ensuring proper project display. The first QR code is intended for IOS users,
+                while the second QR code is designed for Android users.
+              </p>
+              <div class="work-links">
+                <a href="https://github.com/rilindrs/WorldWise_App" target="_blank" rel="noopener" class="link">Explore
+                  this project</a>
+                <a href="https://github.com/rilindrs/WorldWise_App" target="_blank" rel="noopener" title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/worldwise.png" alt="agency elevation" />
+              <span class="reaction-count">
+                <img loading="lazy" src="assets/images/ios.png" alt="agency elevation" width="150" />
+                <img loading="lazy" src="assets/images/androidimg.png" alt="agency elevation" width="150" />
+              </span>
+            </picture>
+          </div>
+          <div class="work-box">
+            <div class="work-textbox">
+              <h3 class="h3">AI-Powered Mastermind Solver</h3>
+              <p class="work-text">
+                In my dissertation titled 'Implementing Artificial Intelligence in Mastermind,'
+                the study delves into the integration of artificial intelligence for the optimization
+                of gameplay strategies in the abstract strategy game Mastermind. This research
+                involves extensive experimentation, examining the application of machine learning
+                algorithms and intelligent decision-making models.
+                <br><br>
+                <strong>Future project aims:</strong>
+                <br>
+                The system can be enhanced through the implementation of a Graphical User Interface
+                (GUI), which visually presents the Mastermind game.
+              </p>
+              <ol class="work-technologies">
+                <li>Python</li>
+                <li>OpenAI Gym</li>
+                <li>Stable Baselines</li>
+                <li>TensorFlow</li>
+                <li>NumPy</li>
+              </ol>
+              <p class="work-text">
+                <strong>Training Performance Visualisation: </strong>
+                <br>
+                Three algorithms (PPO, A2C, and TRPO) were selected for training within the
+                Mastermind environment, with each algorithm running for 500 million timesteps.
+                Cumulative rewards were saved during training and then used to calculate and
+                plot their 300-period rolling mean, providing a clear comparison of reward progression.
+                <br>
+                <br>
+                <strong>To view the dissertation, please visit the 'Education' section on my LinkedIn profile.</strong>
+              </p>
+              <div class="work-links">
+                <a href="https://github.com/rilindrs/Mastermind_Ai_Environment" target="_blank" rel="noopener"
+                  class="link">Explore this project</a>
+                <a href="https://github.com/rilindrs/Mastermind_Ai_Environment" target="_blank" rel="noopener"
+                  title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+            </div>
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/mlgraph.png" alt="agency elevation" width="550" />
+              <img loading="lazy" src="assets/images/mltable.png" alt="agency elevation" width="550" />
+              <img loading="lazy" src="assets/images/mastermind.png" alt="agency elevation" width="550" />
+            </picture>
+          </div>
+          <div class="work-box">
+            <div class="work-textbox">
+              <h3 class="h3">Adventure Game</h3>
+              <p class="work-text">
+                <strong>Text-Based Java Adventure Game:</strong>
+                <br>
+              <ol class="work-technologies">
+                <li>Choose from three unique characters: Mage, Warrior, or Archer, each with distinct attributes.</li><br>
+                <li>Explore a static world with text-based interactions.</li><br>
+                <li>Engage in random encounters, including goblin battles and treasure discoveries.</li><br>
+                <li>Level up to unlock new abilities and enhance character stats.</li>
+              </ol>
+              </p>
+              <ol class="work-technologies">
+                <li>Java</li>
+                <li>BlueJ</li>
+              </ol>
+              <p class="work-text">
+                <strong>Further Game Details:</strong>
+                <br>
+                Kindly select the 'Game Details' button below to access comprehensive and
+                in-depth information regarding the game.
+              </p>
+              <div class="work-links">
+                <a href="https://github.com/rilindrs/Java_Adventure_Game" target="_blank" rel="noopener"
+                  class="link">Explore this project</a>
+                <a href="https://github.com/rilindrs/Java_Adventure_Game" target="_blank" rel="noopener"
+                  title="Source code">
+                  <img src="assets/images/social-links/github.svg" alt="GitHub" loading="lazy" />
+                </a>
+              </div>
+              <br>
+              <div class="work-links">
+                <a href="https://docs.google.com/document/d/1dXg20Y0mxtOkJRHI8aFU2fy2NBRbY2K1_7GFj19pW9A/edit?usp=sharing"
+                  target="_blank" rel="noopener" class="link">Game Details</a>
+                <a href="https://docs.google.com/document/d/1dXg20Y0mxtOkJRHI8aFU2fy2NBRbY2K1_7GFj19pW9A/edit?usp=sharing"
+                  target="_blank" rel="noopener" title="Game Details">
+                  <img src="assets/images/info.png" alt="info" loading="lazy" />
+                </a>
+              </div>
+            </div>
+            <picture class="work-img">
+              <img loading="lazy" src="assets/images/agimg3.png" alt="agency elevation" width="550" />
+              <img loading="lazy" src="assets/images/agimg2.png" alt="agency elevation" width="550" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <h2 class="h2" id="contact">CONTACT</h2>
+        <div class="contact-content">
+          <div class="contact-textbox">
+            <strong href="#" class="hire-alert">
+              <span class="indicator"></span>
+              Available
+            </strong>
+            <p class="contact-text">
+              <br>
+              Whether you have questions, ideas, or just want to say hello,
+              feel free to drop me a message, and let's
+              start a conversation. I look forward to connecting with you!
+            </p><br>
+            <img src="assets/images/signature.png" alt="RS" class="signature" loading="lazy" />
+          </div>
+          <form class="contact-form" method="post" action="https://formspree.io/f/xwkdwkdb">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required inputmode="email" />
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-cta">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <nav>
+          <ol class="footer-links">
+            <li class="footer-link">
+              <a title="GitHub" href="https://github.com/rilindrs" target="_blank" rel="noopener"><img loading="lazy"
+                  src="assets/images/social-links/github.svg" alt="GitHub" /></a>
+            </li>
+            <li class="footer-link">
+              <a title="Linkedin" href="https://www.linkedin.com/in/rilinds/" target="_blank" rel="noopener"><img
+                  loading="lazy" src="assets/images/social-links/linkedin.svg" alt="Linkedin" /></a>
+            </li>
+          </ol>
+        </nav>
+        <p class="footer-text">
+          &copy; 2023 <a target="_blank" rel="noopener">Rilind SHABANI</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
