@@ -860,7 +860,7 @@ body.light .work-img {
   block-size: var(--gutter-nano);
   inline-size: var(--gutter-nano);
   border-radius: 50%;
-  background-color: red;
+  background-color: green;
   animation: blink 550ms alternate infinite var(--easing);
 }
 
